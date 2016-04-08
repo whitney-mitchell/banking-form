@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Apply for a Loan</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<header id="header" class="">
+		<h1>Apply for a Loan!</h1>
+	</header>
+
+	<fieldset>
+		<legend>About You</legend>
+		<label for="first-name">Enter your first name</label>
+		<input type="text" id="first-name"autofocus>
+		<label for="middle-initial">Middle initial</label>
+		<input type="text" id="middle-initial">
+		<label for="last-name">Last name</label>
+		<input type="text" id="last-name" >
+		<br/>
+
+		<label for="mailing-address">Enter your mailing address</label>
+		<input type="text" id="street" placeholder="street address">
+		<input type="text" id="apt" placeholder="apt #">
+		<!-- what if user has no apt #? what if nothing to fill in? -->
+		<input type="text" id="city" placeholder="city">
+		<input type="text" id="state" placeholder="state">
+		<input type="number" id="zip" placeholder="zip">
+		<br/>
+	</fieldset>
+
+	<fieldset>
+		<legend>Current Employment</legend>
+		<label for="occupation">Enter your occupation</label>
+		<input type="text" id="occupation">
+		<label for="employer">Enter your employer</label>
+		<input type="text" id="employer">
+		<br/>
+
+		<label for="employer-address">Enter your employer's mailing address</label>
+		<input type="text" id="emp-street" placeholder="street address">
+		<input type="text" id="suite" placeholder="suite #">
+		<!-- what if user has no suite #? what if nothing to fill in? -->
+		<input type="text" id="emp-ity" placeholder="city">
+		<input type="text" id="emp-state" placeholder="state">
+		<input type="number" id="emp-zip" placeholder="zip">
+	</fieldset>
+
+	<fieldset>
+		<legend>Your Prospective Loan</legend>
+		<label for="loan-type">What type of loan are you applying for?</label>
+		<input name="loan-type" list="loans-available" >
+    <datalist id="loans-available">
+    	<option value="Commercial">
+    	<option value="Real estate">
+    	<option value="Personal">
+    	<option value="Mortgage">
+    </datalist>
+    <br/>
+
+    <label for="amount">Enter the total sum you are applying for</label>
+		<input type="number" id="amount" >
+		<br/>
+
+		<label for="loan-length">Loan Timespan</label>
+    <input type="radio" name="length-of-loan" value="5years"> 5 years
+    <input type="radio" name="length-of-loan" value="15years"> 15 years
+    <input type="radio" name="length-of-loan" value="30years"> 30 years
+    <br/>
+
+    <label for="special-conditions">Special Conditions: Choose all that apply</label>
+    <input type="checkbox" name="down-payment" value="down-payment"> I have a down payment
+    <input type="checkbox" name="out-of-state" value="out-of-state"> Out-of-state resident
+    <input type="checkbox" name="married" value="married"> Married
+    <input type="checkbox" name="co-sign" value="co-sign"> Loan will be co-signed
+    <br/>
+
+
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" ></textarea>
+  </fieldset>
+
+  <fieldset>
+  	<legend>Contact Information</legend>
+  	<label for="email">Enter your email address</label>
+		<input type="email" id="email" >
+		<label for="telephone">Enter your telephone number</label>
+    <input type="tel" id="telephone" placeholder="555-555-5555">
+
+    <label for="linked-in-url">Enter your LinkedIn profile URL</label>
+    <input type="url" id="linked-in">
+
+  </fieldset>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
